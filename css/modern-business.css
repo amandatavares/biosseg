@@ -15,6 +15,27 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.carousel-caption {
+    right: 130px;
+    left: 950px;
+    top: 20px;
+    background-color: #337AB7;
+    color: #FFF !important;
+    opacity: 1;
+}
+#myCarousel{
+  height: 250px;
+}
+footer{
+  background-color: #337AB7;
+  color: #FFF !important;
+  padding: 15px;
+}
+#mod > a{
+  color: #FFF;
+  text-decoration: underline;
+}
+
 .img-portfolio {
     margin-bottom: 30px;
 }
