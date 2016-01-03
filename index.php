@@ -11,13 +11,8 @@
 
     <title>Biossegurança - UFC</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,8 +25,7 @@
 </head>
 
 <body>
-
-    <div id="nav"></div>
+    <?php include "includes/includes.php";?>
 
     <!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide">
