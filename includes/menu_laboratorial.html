@@ -1,0 +1,31 @@
+<div class="list-group">
+
+<?php
+	if(!isset($_GET['pagina'])){//CONSIDERANDO QUE ESTAMOS NA PÁGINA INICIAL(INICIO)
+?>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a[href="index.php"]').addClass('active');
+	});
+</script>
+<?php
+	}else{
+		// se a variável get existir vamos setar de forma automática
+?>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a[href="?pagina=<?=$_GET['pagina']?>"]').addClass('active');
+	});
+</script>
+<?php
+	}
+?>
+    <a href="?pagina=epi" class="list-group-item">EPI</a>
+    <a href="?pagina=epc" class="list-group-item">EPC</a>
+    <a href="?pagina=pop" class="list-group-item">POP</a>
+    <a href="?pagina=fispq" class="list-group-item ">FISPQ</a>
+    <a href="?pagina=manual" class="list-group-item">Manual</a>
+    <a href="?pagina=bpl" class="list-group-item">BPL</a>
+    <a href="?pagina=incendios" class="list-group-item">Incêndios</a>
+    <a href="?pagina=mapa_de_risco" class="list-group-item">Mapa da Risco</a>
+</div>

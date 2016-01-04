@@ -1,3 +1,6 @@
+<!-- Page Content -->
+<div class="container">
+
 <!-- Page Heading/Breadcrumbs -->
 <div class="row">
     <div class="col-lg-12">
@@ -17,16 +20,9 @@
 <div class="row">
     <!-- Sidebar Column -->
     <div class="col-md-3">
-      <div class="list-group">
-          <a href="epi.html" class="list-group-item">EPI</a>
-          <a href="epc.html" class="list-group-item">EPC</a>
-          <a href="pop.html" class="list-group-item">POP</a>
-          <a href="fispq.html" class="list-group-item ">FISPQ</a>
-          <a href="manual/manual.html" class="list-group-item">Manual</a>
-          <a href="bpl.html" class="list-group-item">BPL</a>
-          <a href="incendios.html" class="list-group-item">Incêndios</a>
-          <a href="mapa_de_risco.html" class="list-group-item active">Mapa da Risco</a>
-      </div>
+      <?php
+        include 'includes/menu_laboratorial.html';
+      ?>
     </div>
     <!-- Content Column -->
     <div class="col-md-9">
@@ -40,7 +36,7 @@
           A intensidade do risco depende dos tamanhos do círculo, sendo os maiores, mais graves e as cores variam de acordo com os tipos de risco.
         </p>
         <img class="img-responsive" src="../images/circulos" alt="" />
-        Fonte: <a href="http://nwn.cdnfacil.com.br/wp-content/uploads/2012/12/Como-fazer-Mapa-de-Risco.png">http://nwn.cdnfacil.com.br/wp-content/uploads/2012/12/Como-fazer-Mapa-de-Risco.png</a>
+        <a href="http://nwn.cdnfacil.com.br/wp-content/uploads/2012/12/Como-fazer-Mapa-de-Risco.png">Fonte da imagem</a>
         <p>
           É necessário que o local de trabalho possua pelo menos um mapa de risco, pois esse ajuda a prevenir, minimizar ou anular acidentes de trabalho. Além disso, estimula a conscientização dos trabalhadores acerca de sua própria segurança.
           O mapa deve ser colocado em um local visível e de fácil acesso a todos os funcionários, ou pelo menos no local de maior acesso às pessoas. Ele não precisa ser atualizado anualmente, apenas quando houver modificação dos riscos no ambiente.
@@ -111,3 +107,4 @@
 <!-- /.row -->
 
 <hr>
+</div>

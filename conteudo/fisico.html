@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Risco Físico</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body>
-
-    <!-- Navigation -->
-
-    <!-- Page Content -->
+  <!-- Page Content -->
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
@@ -34,7 +8,7 @@
                     <small>Físico</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.php">Home</a>
                     </li>
                     <li class="active">Risco Físico</li>
                 </ol>
@@ -46,42 +20,54 @@
         <div class="row">
             <!-- Sidebar Column -->
             <div class="col-md-3">
-              <div class="list-group">
-                  <a href="quimico.html" class="list-group-item">Risco Químico</a>
-                  <a href="biologico.html" class="list-group-item">Risco Biológico</a>
-                  <a href="fisico.html" class="list-group-item active">Risco Físico</a>
-                  <a href="ergonomico.html" class="list-group-item">Risco Ergonômico</a>
-                  <a href="acidente.html" class="list-group-item">Risco de Acidente</a>
-              </div>
+              <?php
+                include 'includes/menu_riscos.html';
+              ?>
             </div>
             <!-- Content Column -->
             <div class="col-md-9">
-                <h2>Section Heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit.</p>
+                <h3>Tipos de Risco Físico</h3>
+                <br>
+                <h4><b>Choque elétrico</b></h4>
+                <b>O que é?</b>
+                <p>É a passagem de uma corrente pelo corpo tornando-o um condutor elétrico. Essa corrente varia de acordo com a intensidade dos volts a que a pessoa é submetida e pode gerar de danos leves, queimaduras, incêndios ou até mesmo a morte. A intensidade do choque pode ser influenciada por suor, isolamento, umidade etc. Em laboratórios se trabalha com muitos equipamentos que necessitam de energia para manter seu funcionamento. É preciso ficar bem atento ao manuseá-los no intuito de evitar a ocorrência de um acidente.</p>
+                <br>
+                <b>Como Prevenir?</b>
+                <p>Para isso é necessário seguir algumas regras básicas:</p>
+                <ul>
+                  <li>As instalações devem estar sempre limpas e bem cuidadas.</li>
+                  <li>Evitar os acréscimos de carga, pois pode acabar gerando um curto-circuito.</li>
+                  <li>Para ligações bifásicas, deve-se manter equilíbrio transferindo alguns aparelhos de fase mais carregada para a menos carregada. Esse desequilíbrio pode causar a queima de fusíveis ou danificar o aparelho.</li>
+                  <li>Sempre confira na placa de identificação do aparelho a sua voltagem e potência, se possível deixar esses valores bem visíveis para facilitar o manuseio correto dos mesmos dentro dos laboratórios.</li>
+                  <li>Os quadros de distribuição devem ser disjuntores.</li>
+                  <li>Toda instalação deve estar de acordo com a Associação Brasileira de Normas Técnicas (ABNT).</li>
+                  <li>A fiação deve ser embutida em eletrodutos ficando fora do alcance de pessoas.</li>
+                  <li>Jamais use plugs elétricos para ligar mais de um equipamento, pois a fiação pode sofrer um aquecimento e queimar provocando um circuito ou em casos mais graves um incêndio.</li>
+                  <li>Sempre instale o fio terra dos equipamentos de maior potência.</li>
+                  <li>Evitar manuseio de líquidos perto das fiações.</li>
+                </ul>
+                <br>
+                <b>Em casos de choque elétrico, o que se deve fazer?</b>
+                <ul>
+                  <li>Imediatamente tentar afastar a vítima da fonte da corrente desligando o interruptor. Em caso de mover a pessoa tente fazê-lo com o uso de um material não condutor como madeira, plástico.</li>
+                  <li>Acionar ajuda específica. Caso a vítima esteja inconsciente, faça o uso de técnicas de ressuscitação.</li>
+                  <li>Se a vítima estiver consciente, colocá-la na Posição Lateral de Segurança (PLS) enquanto aguarda a chegada do socorro.</li>
+                </ul>
+
+                <br>
+                <p>
+                  Fontes:
+                  <br><a href="#">http://www.fiocruz.br/biosseguranca/Bis/virtual%20tour/hipertextos/up2/eletricidade.html</a>
+                  <br><a href="#">http://primeiros-socorros.info/primeiros-socorros-como-agir/choque-eletrico.html</a>
+                  <br><a href="#">http://mundoeducacao.bol.uol.com.br/fisica/choque-eletrico-um-verdadeiro-perigo.htm (FIGURA 1)</a>
+                  <br><a href="#">http://alunosbiotec.blogspot.com.br/2014/06/simbolos-de-seguranca-em-laboratorio.html (FIGURA 2)</a>
+                </p>
             </div>
         </div>
         <!-- /.row -->
 
         <hr>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
 
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
