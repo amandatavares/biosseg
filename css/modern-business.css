@@ -23,6 +23,11 @@ body {
     color: #FFF !important;
     opacity: 1;
 }
+
+#bs-example-navbar-collapse-1 ul li a {
+  font-weight: bold;
+}
+
 #myCarousel{
   height: 250px;
 }

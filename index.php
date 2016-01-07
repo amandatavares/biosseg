@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="MP Desenvolvimento">
+    <meta name="author" content="AJAT Desenvolvimento">
 
     <title>Biossegurança - UFC</title>
 
+    <link rel="icon" type="image/png" href="images/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,7 +31,7 @@
     <?php
     if(isset($_GET['pagina'])){
     	//verificar o valor, caso seja um desconhecido nada acontece
-      //se for p1 vou incluir a pagina p1
+      //se for x vou incluir a pagina x
     	if($_GET['pagina']=="epi"){
     		include "conteudo/epi.html";
     	}else if($_GET['pagina']=="epc"){
