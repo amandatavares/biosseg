@@ -15,13 +15,11 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-.carousel-caption {
-    right: 130px;
-    left: 950px;
-    top: 20px;
+.legend {
+    margin-top: 20px;
     background-color: #337AB7;
     color: #FFF !important;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 #bs-example-navbar-collapse-1 ul li a {
@@ -30,6 +28,15 @@ body {
 
 #myCarousel{
   height: 250px;
+}
+.carousel-indicators {
+  bottom: 5px;
+}
+.carousel-indicators li {
+  border: 1px solid #337AB7;
+}
+.carousel-indicators .active{
+  background-color: #337AB7;
 }
 footer{
   background-color: #337AB7;

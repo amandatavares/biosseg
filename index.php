@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="AJAT Desenvolvimento">
 
+    <script src="js/jquery.js"></script>
     <title>Biossegurança - UFC</title>
 
     <link rel="icon" type="image/png" href="images/favicon.ico">
@@ -74,7 +75,7 @@
     <?php include_once "includes/footer.html";?>
     </div>
 
-    <script src="js/jquery.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
 
 </body>
