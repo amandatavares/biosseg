@@ -29,6 +29,19 @@ body {
 #myCarousel{
   height: 250px;
 }
+.thumb {
+  width: 150px !important;
+  height: 150px !important;
+}
+.thumb-legend {
+  font-weight: bold;
+  text-align: center;
+}
+.img-left {
+  float:left;
+  clear:both;
+  margin-right:10px;
+}
 .carousel-indicators {
   bottom: 5px;
 }
