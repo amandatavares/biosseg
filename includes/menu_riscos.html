@@ -1,24 +1,25 @@
 <div class="list-group">
-<!-- <?php
-	if(isset($_GET['pagina'])){//CONSIDERANDO QUE ESTAMOS NA PÁGINA INICIAL(INICIO)
-?> -->
-<!-- <script type="text/javascript">
+
+<?php
+	if(!isset($_GET['pagina'])){
+?> 
+<script type="text/javascript">
 	$(document).ready(function(){
 		$('a[href="index.php"]').addClass('active');
 	});
 </script>
 <?php
 	}else{
-		// SE A VARIÁVEL GET EXISTIR VAMOS SETAR DE FORMA AUTOMÁTICA
-?> -->
-<!-- <script type="text/javascript">
+
+?>
+<script type="text/javascript">
 	$(document).ready(function(){
-		$('a[href=""?pagina=<?=$_GET['pagina']?>"]').addClass('active');
+		$('a[href="?pagina=<?=$_GET['pagina']?>"]').addClass('active');
 	});
-</script> -->
-<!-- <?php
+</script>
+<?php
 	}
-?> -->
+?>
     <a href="?pagina=quimico" class="list-group-item">Risco Químico</a>
     <a href="?pagina=biologico" class="list-group-item">Risco Biológico</a>
     <a href="?pagina=fisico" class="list-group-item">Risco Físico</a>
